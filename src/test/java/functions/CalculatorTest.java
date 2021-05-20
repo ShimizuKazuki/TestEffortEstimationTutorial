@@ -40,6 +40,14 @@ class CalculatorTest {
        Double tmpAtribute = calc3.getAttribute();
        assertEquals(tmpAtribute, Double.valueOf(0.0));
    }
+   @Test
+   public void testAddParameter_N001(){
+        Calculator calc = new Calculator();
+        calc.plus_renamed(1.0);
+        assertEquals(calc.getAnswer(), Double.valueOf(1));
+        System.out.println();
+        common();
+   }
 //    @Test
 //    public void testMinus_N001(){
 //         Calculator calc = new Calculator();
