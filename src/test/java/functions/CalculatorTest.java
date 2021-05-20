@@ -18,7 +18,7 @@ class CalculatorTest {
     @Test
     public void testAdd_N001(){
         Calculator calc = new Calculator();
-        calc.plus_renamed(1.0);
+        calc.plus_renamed(1.0, 1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();
         common();
@@ -43,7 +43,7 @@ class CalculatorTest {
    @Test
    public void testAddParameter_N001(){
         Calculator calc = new Calculator();
-        calc.plus_renamed(1.0);
+        calc.plus_renamed(1.0, 1.0);
         assertEquals(calc.getAnswer(), Double.valueOf(1));
         System.out.println();
         common();
